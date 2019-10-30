@@ -82,7 +82,7 @@ int2 = 8
 result = int1 + int2      # result = 12
 result = int2 - int1      # result = 4
 result = int1 * int2      # result = 32
-result = (int2+1) / int1  # result = 2
+result = (int2+1) // int1  # result = 2
 result = int2 ** int1     # result = 4096
 result = (int2+1) % int1  # result = 1
 ```
