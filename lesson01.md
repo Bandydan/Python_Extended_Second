@@ -200,4 +200,4 @@ print("At the end we have:\n\
 
 [Правила](rules.md)
 
-[Следующий урок](lesson02.py)
+[Следующий урок](lesson02.md)
