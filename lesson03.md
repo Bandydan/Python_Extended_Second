@@ -49,31 +49,30 @@ while True:
 sum = 0
 for i in range(1, 11):
     sum += i
-print (sum)
+print(sum)
 ```
 
 Это один из вариантов использования цикла for: для того, чтобы выполнить действия заданное количество раз. Другой вариант - работа цикла for со списками и другими итерируемыми типами данных, мы рассмотрим на примере файла.
 
+```python
+c = {1: 'a', 2: 'b', 3: 'c'}
+for i in enumerate(c):
+    print(i)
 
->>> c = {1: 'a', 2: 'b', 3: 'c'}
->>> for i in enumerate(c):
-...     print(i)
-... 
-(0, 1)
-(1, 2)
-(2, 3)
-
+#(0, 1)
+#(1, 2)
+#(2, 3)
+```
 
 Функция enumerate() используется для упрощения прохода по коллекциям в цикле, когда кроме самих элементов требуется их индекс:
+```python
+a = [10, 20, 30, 40]
+for id, item in enumerate(a):
+    a[id] = item + 5
+print(a)
 
->>> a = [10, 20, 30, 40]
->>> for id, item in enumerate(a):
-...     a[id] = item + 5
-... 
->>> a
 [15, 25, 35, 45]
-
-
+```
 
 ## Базовая работа с файлами
 
@@ -113,10 +112,8 @@ C:\python3\python.exe prog.py testfile.txt
 
 ## Ссылки
 
-[Итераторы и Генераторы](https://shepetko.com/ru/blog/python-iterable-iterators-generators)
-
 [Работа с файлами](https://pythonworld.ru/tipy-dannyx-v-python/fajly-rabota-s-fajlami.html)
 
 [Домашка](hw03.md)
 
-[Следующий урок](lesson04.py)
+[Следующий урок](lesson04.md)
